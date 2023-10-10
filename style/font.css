@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Bakudai_Bold";
+  src: url(/font/bakudaifont-master/webfont/Bakudai-Bold.woff);
+}
+@font-face {
+  font-family: "Bakudai_ExtraLight";
+  src: url(/font/bakudaifont-master/webfont/Bakudai-ExtraLight.woff);
+}
+@font-face {
+  font-family: "Bakudai_Light";
+  src: url(/font/bakudaifont-master/webfont/Bakudai-Light.woff);
+}
+@font-face {
+  font-family: "Bakudai_Medium";
+  src: url(/font/bakudaifont-master/webfont/Bakudai-Medium.woff);
+}
+@font-face {
+  font-family: "Bakudai_Regular";
+  src: url(/font/bakudaifont-master/webfont/Bakudai-Regular.woff);
+}
+@font-face {
+  font-family: "Noto_Sans_TC_Black";
+  src: url(/font/Sans/NotoSansTC-Black.ttf);
+}
+@font-face {
+  font-family: "Noto_Sans_TC_Bold";
+  src: url(/font/Sans/NotoSansTC-Bold.ttf);
+}
+@font-face {
+  font-family: "Noto_Sans_TC_ExtraBold";
+  src: url(/font/Sans/NotoSansTC-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "Noto_Sans_TC_ExtraLight";
+  src: url(/font/Sans/NotoSansTC-ExtraLight.ttf);
+}
+@font-face {
+  font-family: "Noto_Sans_TC_Light";
+  src: url(/font/Sans/NotoSansTC-Light.ttf);
+}
+@font-face {
+  font-family: "Noto_Sans_TC_Medium";
+  src: url(/font/Sans/NotoSansTC-Medium.ttf);
+}
+@font-face {
+  font-family: "Noto_Sans_TC_Regular";
+  src: url(/font/Sans/NotoSansTC-Regular.ttf);
+}
+@font-face {
+  font-family: "Noto_Sans_TC_SemiBold";
+  src: url(/font/Sans/NotoSansTC-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Noto_Sans_TC_Thin";
+  src: url(/font/Sans/NotoSansTC-Thin.ttf);
+}
+@font-face {
+  font-family: "Noto_Serif_TC_Black";
+  src: url(/font/notoSerif/NotoSerifTC-Black.otf);
+}
+@font-face {
+  font-family: "Noto_Serif_TC_Bold";
+  src: url(/font/notoSerif/NotoSerifTC-Bold.otf);
+}
+@font-face {
+  font-family: "Noto_Serif_TC_ExtraLight";
+  src: url(/font/notoSerif/NotoSerifTC-ExtraLight.otf);
+}
+@font-face {
+  font-family: "Noto_Serif_TC_Light";
+  src: url(/font/notoSerif/NotoSerifTC-Light.otf);
+}
+@font-face {
+  font-family: "Noto_Serif_TC_Medium";
+  src: url(/font/notoSerif/NotoSerifTC-Medium.otf);
+}
+@font-face {
+  font-family: "Noto_Serif_TC_Regular";
+  src: url(/font/notoSerif/NotoSerifTC-Regular.otf);
+}
+@font-face {
+  font-family: "Noto_Serif_TC_SemiBold";
+  src: url(/font/notoSerif/NotoSerifTC-SemiBold.otf);
+}/*# sourceMappingURL=font.css.map */
