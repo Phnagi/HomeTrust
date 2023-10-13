@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
 .containerBox1 {
   width: 100%;
   height: 100vh;
@@ -310,19 +318,19 @@ main .containerBox2 {
 }
 main .containerBox2 .indexBigAbout {
   position: absolute;
-  width: 3500px;
+  width: 3400px;
   font-family: "Noto_Serif_TC_SemiBold";
-  font-size: 280px;
+  font-size: 260px;
   letter-spacing: 150px;
   margin: 0;
-  top: 2%;
+  top: -6%;
   left: 5%;
   animation: bigAboutAnimation 30s linear infinite;
 }
 main .containerBox2 .containerBox2Content {
   position: absolute;
   width: 400px;
-  bottom: 50px;
+  bottom: 15%;
   left: 6.5%;
 }
 main .containerBox2 .containerBox2Content section {
@@ -332,13 +340,13 @@ main .containerBox2 .containerBox2Content section {
   font-family: "Noto_Sans_TC_Medium";
 }
 main .containerBox2 .containerBox2Content section + section {
-  margin-top: 15%;
+  margin-top: 8%;
 }
 main .containerBox2 img {
   position: absolute;
   width: 500px;
   right: 0%;
-  bottom: -30px;
+  bottom: 0%;
 }
 @keyframes bigAboutAnimation {
   0% {
@@ -358,6 +366,7 @@ main .containerBox3 {
   overflow: hidden;
 }
 main .containerBox3 .containerBox3Title {
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -370,7 +379,7 @@ main .containerBox3 .containerBox3Title {
   font-family: "Noto_Serif_TC_Bold";
   font-size: 24px;
   letter-spacing: 0.8rem;
-  left: 0.8rem;
+  padding-right: 0.8rem;
 }
 main .containerBox3 .containerBox3Img {
   position: absolute;
@@ -387,7 +396,6 @@ main .containerBox3 .containerBox3Img .containerBox3ImgBox {
   position: relative;
   width: 25%;
   height: 100%;
-  background-color: aqua;
   overflow: hidden;
 }
 main .containerBox3 .containerBox3Img .containerBox3ImgBox h3 {
@@ -403,6 +411,16 @@ main .containerBox3 .containerBox3Img .containerBox3ImgBox h3 {
   position: absolute;
   z-index: 11;
   text-align: center;
+}
+main .containerBox3 .containerBox3Img .containerBox3ImgBox h3 a {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   left: 1.6rem;
 }
 main .containerBox3 .containerBox3Img .containerBox3ImgBox .containerBox3ImgBoxFilter {
@@ -411,15 +429,22 @@ main .containerBox3 .containerBox3Img .containerBox3ImgBox .containerBox3ImgBoxF
   height: 100%;
   background-color: rgba(1, 28, 52, 0.5215686275);
   z-index: 10;
+  transition: 0.5s ease-in-out;
 }
 main .containerBox3 .containerBox3Img .containerBox3ImgBox img {
+  -o-object-fit: cover;
+     object-fit: cover;
   position: absolute;
   height: 100%;
+  overflow: hidden;
+}
+main .containerBox3 .containerBox3Img .containerBox3ImgBox:hover .containerBox3ImgBoxFilter {
+  background-color: rgba(1, 28, 52, 0.8);
 }
 main .containerBox4 {
   position: relative;
   width: 100%;
-  height: 94vh;
+  height: 100vh;
   overflow: hidden;
 }
 main .containerBox4 .containerBox4Title {
@@ -433,9 +458,11 @@ main .containerBox4 .containerBox4Title {
   font-family: "Noto_Serif_TC_Bold";
   font-size: 24px;
   letter-spacing: 1.3rem;
-  top: 3%;
+  top: 20vh;
 }
 main .containerBox4 .containerBox4Under {
+  position: relative;
+  top: 15vh;
   width: 100%;
   height: 75vh;
   display: flex;
@@ -444,7 +471,7 @@ main .containerBox4 .containerBox4Under {
 main .containerBox4 .containerBox4Under .containerBox4Left {
   position: relative;
   width: 50%;
-  height: 40%;
+  height: 60%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -466,7 +493,7 @@ main .containerBox4 .containerBox4Under .containerBox4Right {
   height: 100%;
   background-color: rgb(255, 255, 255);
   text-align: end;
-  padding-right: 5.5rem;
+  padding-right: 5.5%;
 }
 main .containerBox4 .containerBox4Under .containerBox4Right .containerBox4RightBtn {
   position: relative;
@@ -559,7 +586,7 @@ footer {
   position: relative;
   width: 100%;
   height: 40vh;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   overflow: hidden;
 }
 footer .footerUp {
@@ -661,7 +688,7 @@ footer .footerRight .footerRightTitle ul li {
   font-family: "Noto_Serif_TC_Regular";
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 994px) {
   .nav ul {
     display: none;
   }
@@ -670,5 +697,8 @@ footer .footerRight .footerRightTitle ul li {
   }
   .phoneNavMenu {
     display: flex;
+  }
+  main .containerBox3 {
+    overflow: hidden;
   }
 }/*# sourceMappingURL=index.css.map */
