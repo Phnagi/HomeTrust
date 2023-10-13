@@ -349,6 +349,19 @@ body {
   }
 }
 
+.navInAct{
+  transform: scaleY(0);
+  transform-origin: top;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.navAct{
+  transform: scaleY(1);
+  transform-origin: top;
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+
 .navPhoneActive {
   display: flex;
 }
@@ -397,6 +410,26 @@ main {
       section + section {
         margin-top: 8%;
       }
+    }
+    .containerBox2ContentAct{
+      transform: translateX(00px);
+      opacity: 1;
+      transition: 1.5s ease-in-out;
+    }
+    .containerBox2ContentInAct{
+      transform: translateX(-500px);
+      opacity: 0;
+      transition: 1.5s ease-in-out;
+    }
+    .containerBox2ImgAct{
+      transform: translateX(0px);
+      opacity: 1;
+      transition: 1.5s ease-in-out;
+    }
+    .containerBox2ImgInAct{
+      transform: translateX(500px);
+      opacity: 0;
+      transition: 1.5s ease-in-out;
     }
     img {
       position: absolute;
@@ -793,8 +826,8 @@ footer {
 
 @media screen and (max-width: 994px) {
   .nav {
-    // position: sticky;
-
+    position: sticky;
+    
     ul {
       display: none;
     }

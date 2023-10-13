@@ -294,6 +294,20 @@
   z-index: 10;
 }
 
+.navInAct {
+  transform: scaleY(0);
+  transform-origin: top;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.navAct {
+  transform: scaleY(1);
+  transform-origin: top;
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+
 .navPhoneActive {
   display: flex;
 }
@@ -341,6 +355,26 @@ main .containerBox2 .containerBox2Content section {
 }
 main .containerBox2 .containerBox2Content section + section {
   margin-top: 8%;
+}
+main .containerBox2 .containerBox2ContentAct {
+  transform: translateX(0px);
+  opacity: 1;
+  transition: 1.5s ease-in-out;
+}
+main .containerBox2 .containerBox2ContentInAct {
+  transform: translateX(-500px);
+  opacity: 0;
+  transition: 1.5s ease-in-out;
+}
+main .containerBox2 .containerBox2ImgAct {
+  transform: translateX(0px);
+  opacity: 1;
+  transition: 1.5s ease-in-out;
+}
+main .containerBox2 .containerBox2ImgInAct {
+  transform: translateX(500px);
+  opacity: 0;
+  transition: 1.5s ease-in-out;
 }
 main .containerBox2 img {
   position: absolute;
@@ -689,6 +723,9 @@ footer .footerRight .footerRightTitle ul li {
 }
 
 @media screen and (max-width: 994px) {
+  .nav {
+    position: sticky;
+  }
   .nav ul {
     display: none;
   }
