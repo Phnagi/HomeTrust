@@ -11,7 +11,7 @@ let footer = document.querySelector("footer");
 let navul = document.querySelector(".navul");
 // let hamberger = document.querySelector(".hamberger");
 let windowWidth = window.innerWidth;
-
+let windowHeight = window.innerHeight;
 
 let containerBox1Height = containerBox1.getBoundingClientRect().height;
 let containerBox2Height =
@@ -50,6 +50,7 @@ window.addEventListener("resize",(e) => {
 
 
   windowWidth = window.innerWidth;
+  windowHeight = window.windowHeight;
   if(windowWidth < 995){
     nav.classList.remove("navAct");
   }else{
