@@ -1,0 +1,46 @@
+main {
+  position: relative;
+  top: 100px;
+  .container1 {
+    // background-color: #606060;
+    h2 {
+      font-family: "Noto_Serif_TC_Bold";
+      letter-spacing: 1.2rem;
+      font-size: 20px;
+    }
+    .buttonBox {
+      //   background-color: antiquewhite;
+      //   height: 75vh;
+      display: flex;
+      //   justify-content: end;
+      align-items: end;
+      .btn {
+        background-color: transparent;
+        padding-left: 60px;
+        padding-right: 40px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-family: "Noto_Serif_TC_Regular";
+        font-size: 20px;
+        letter-spacing: 20px;
+        border: 1px solid black;
+        border-radius: 0px;
+      }
+    }
+    .formbox {
+      form {
+        .formsection {
+          .forminput {
+            border-radius: 0px !important;
+            border: none;
+            border-bottom: 1px solid black;
+          }
+          .forminput:focus {
+            background-color: none;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+}

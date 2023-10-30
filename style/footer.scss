@@ -1,0 +1,335 @@
+$white: #ffffff;
+$black: #000000;
+$mainBlue: #193362;
+
+footer {
+  //   color: aqua;
+  top: 100px; //
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  background-color: #d9d9d9;
+  overflow: hidden;
+  .footerUp {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    // background-color: #193362;
+    margin: 0;
+
+    li {
+      transition: 0.5s ease-in-out;
+      a {
+        color: $black;
+        text-decoration: none;
+        font-family: "Noto_Serif_TC_SemiBold";
+        font-size: 16px;
+        letter-spacing: 0.8rem;
+        transition: 0.5s ease-in-out;
+      }
+    }
+    li + li {
+      margin-left: 5%;
+    }
+    li:hover {
+      a {
+        color: $mainBlue;
+      }
+    }
+  }
+  .footerLeft {
+    position: absolute;
+    width: 33%;
+    height: 80%;
+    // background-color: #8b8b8b;
+    top: 15%;
+    left: 6.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    img {
+      width: 100px;
+    }
+    #footerLeftTextBox {
+      font-family: "Noto_Serif_TC_SemiBold";
+      left: 10%;
+      p {
+        font-size: 20px;
+        letter-spacing: 0.4rem;
+        margin: 0% 0% 0% 2%;
+      }
+      p + p {
+        margin-top: 1%;
+      }
+    }
+  }
+  .footerCenter {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    // background-color: #8b8b8b;
+    top: 25%;
+    left: -1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      writing-mode: vertical-lr;
+      letter-spacing: 1.6rem;
+      font-size: 70px;
+      font-family: "Bakudai_Bold";
+    }
+  }
+  .footerRight {
+    position: absolute;
+    width: 33%;
+    height: 80%;
+    // background-color: #8b8b8b;
+    top: 20%;
+    right: -1%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    ul {
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      list-style: none;
+      li {
+        span {
+          color: $black;
+        }
+        a {
+          text-decoration: none;
+          color: $black;
+        }
+      }
+      // align-items: center;
+
+      li + li {
+        margin-top: 1rem;
+      }
+    }
+    .footerRightTitle {
+      ul {
+        li {
+          font-family: "Noto_Serif_TC_Regular";
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 679px) and (max-width: 994px) {
+  .nav {
+    position: sticky;
+
+    ul {
+      display: none;
+    }
+    .hamberger {
+      display: flex;
+    }
+  }
+  .phoneNavMenu {
+    display: flex;
+  }
+  main {
+    .containerBox2 {
+      .containerBox2Content {
+        width: 350px;
+        section {
+          font-size: 14px;
+        }
+        section + section {
+          margin-top: 5%;
+        }
+      }
+      .containerBox2Img {
+        height: 20%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 300px;
+          bottom: 60%;
+        }
+      }
+    }
+    .containerBox3 {
+      overflow: hidden;
+      .containerBox3Title {
+        margin-top: 0vh;
+      }
+      .containerBox3Img {
+        height: 80vh;
+        .containerBox3ImgBox {
+          width: 50%;
+          height: 50%;
+          h3 {
+            font-size: 18px;
+            // right:18px;
+
+            a {
+              letter-spacing: 1rem;
+              padding-right: 1.6rem;
+            }
+          }
+        }
+      }
+    }
+    .containerBox4 {
+      .containerBox4Title {
+        top: 12vh;
+        padding-right: 35px;
+      }
+      .containerBox4Under {
+        top: 12vh;
+        .containerBox4Left {
+          justify-content: end;
+          align-items: start;
+          margin-left: 50px;
+          margin-bottom: -70px;
+          .containerBox4LeftTitle {
+            font-size: 25px;
+          }
+          .containerBox4LefContent {
+            font-size: 25px;
+          }
+        }
+        .containerBox4Right {
+          padding-right: 50px;
+          .containerBox4RightBtn {
+            font-size: 18px;
+            padding: 18px 34px 18px 46px;
+          }
+          .containerBox4RightemailBox {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: end;
+            font-size: 20px;
+          }
+          .containerBox4RightQrcodeBox {
+            bottom: -130px;
+            .qrcodeBox {
+              width: 33%;
+              a {
+                font-size: 16px;
+              }
+              img {
+                width: 100px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    .footerUp {
+      li {
+        a {
+          font-size: 12px;
+          letter-spacing: 0.5rem;
+        }
+      }
+    }
+    .footerLeft {
+      top: 18%;
+      img {
+        width: 80px;
+      }
+      #footerLeftTextBox {
+        p {
+          font-size: 16px;
+          letter-spacing: 0.4rem;
+        }
+      }
+    }
+    .footerCenter {
+    }
+    .footerRight {
+      right: 50px;
+      font-size: 14px;
+      ul {
+        li {
+          span {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 678px) {
+  footer {
+    height: 100vh;
+    .footerUp {
+      position: relative;
+      top: -50px;
+      li {
+        a {
+          font-size: 10px;
+          letter-spacing: 0.3rem;
+        }
+      }
+    }
+    .footerUnder {
+      width: 100%;
+      height: 90vh;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .footerLeft {
+        width: 100%;
+        height: 33%;
+        top: 10%;
+        right: 0%;
+        left: 40px;
+
+        img {
+          width: 80px;
+        }
+        #footerLeftTextBox {
+          p {
+            font-size: 16px;
+            letter-spacing: 0.4rem;
+          }
+        }
+      }
+      .footerCenter {
+        position: relative;
+        width: 100%;
+        height: 33%;
+        align-items: start;
+        left: 20px;
+        top: 3%;
+      }
+      .footerRight {
+        position: relative;
+        width: 100%;
+        height: 33%;
+        left: 10px;
+        font-size: 14px;
+        top: -2%;
+        justify-content: start;
+        ul {
+          li {
+            span {
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/font.css" />
+    <link rel="stylesheet" href="style/nav.css" />
+    <link rel="stylesheet" href="style/content.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <img src="image/logo-11.png" alt="" />
+        <ul class="navul">
+          <li>
+            <a href="index.html">首頁</a>
+          </li>
+          <li>
+            <a href="#">關於我們</a>
+          </li>
+          <li>
+            <a href="#">服務項目</a>
+          </li>
+          <li>
+            <a href="#">驗屋流程</a>
+          </li>
+          <li>
+            <a href="content.html">聯絡我們</a>
+          </li>
+        </ul>
+        <input type="checkbox" name="" id="navCheckBox" />
+        <label class="hamberger" for="navCheckBox">
+          <div class="hambergerLine1 hambergerLine"></div>
+          <div class="hambergerLine2 hambergerLine"></div>
+        </label>
+      </nav>
+      <div class="phoneNavMenu">
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">首頁</a>
+            </li>
+            <li>
+              <a href="#">關於我們</a>
+            </li>
+            <li>
+              <a href="#">服務項目</a>
+            </li>
+            <li>
+              <a href="#">驗屋流程</a>
+            </li>
+            <li>
+              <a href="content.html">聯絡我們</a>
+            </li>
+          </ul>
+          <img src="image/logo-11.png" alt="" />
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container container1 mt-3">
+        <h2>聯絡我們</h2>
+
+        <section class="row justify-content-center mb-5 mt-5">
+          <div class="col-12 col-md-8 formbox">
+            <form action="javascript:GoForm()" class="myform">
+              <div class="mb-3 formsection">
+                <label for="name" class="form-label">姓名</label>
+                <input
+                  type="text"
+                  class="form-control forminput"
+                  id="name"
+                  placeholder=""
+                  name="name"
+                />
+              </div>
+              <div class="mb-3 formsection">
+                <label for="tel" class="form-label">電話</label>
+                <input
+                  type="text"
+                  class="form-control forminput"
+                  id="tel"
+                  placeholder=""
+                  name="tel"
+                />
+              </div>
+              <div class="mb-3 formsection">
+                <label for="email" class="form-label">信箱</label>
+                <input
+                  type="text"
+                  class="form-control forminput"
+                  id="email"
+                  placeholder=""
+                  name="email"
+                />
+              </div>
+              <div class="mb-3 formsection">
+                <label for="address" class="form-label">地址</label>
+                <input
+                  type="text"
+                  class="form-control forminput"
+                  id="address"
+                  placeholder=""
+                  name="address"
+                />
+              </div>
+              <div class="mb-3 formsection">
+                <label for="date" class="form-label">希望檢驗日期</label>
+                <input
+                  type="text"
+                  class="form-control forminput"
+                  id="date"
+                  placeholder=""
+                  name="date"
+                />
+              </div>
+              <div class="mb-3 formsection">
+                <label for="textArea" class="form-label">其他內容</label>
+                <textarea
+                  class="form-control forminput"
+                  id="textArea"
+                  rows="3"
+                  name="textArea"
+                ></textarea>
+              </div>
+            </form>
+          </div>
+          <div
+            class="col-12 col-md-4 buttonBox justify-content-center justify-content-md-end"
+          >
+            <button type="submit" value="submit" class="btn">送出</button>
+            <!-- <input type="submit" value="submit" /> -->
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <ul class="footerUp">
+        <li>
+          <a href="#">首頁</a>
+        </li>
+        <li>
+          <a href="#">關於我們</a>
+        </li>
+        <li>
+          <a href="#">服務項目</a>
+        </li>
+        <li>
+          <a href="#">驗屋流程</a>
+        </li>
+        <li>
+          <a href="#">聯絡我們</a>
+        </li>
+      </ul>
+      <div class="footerUnder">
+        <section class="footerLeft">
+          <img src="image/logo-11.png" alt="" />
+          <div id="footerLeftTextBox">
+            <p>HOME</p>
+            <p>TRUST</p>
+            <p>HOME</p>
+            <p>INSPECTOR</p>
+          </div>
+        </section>
+        <section class="footerCenter">
+          <h2>嘉信</h2>
+        </section>
+        <section class="footerRight">
+          <div class="footerRightTitle">
+            <ul>
+              <li><span>Email</span></li>
+              <li><span>電話</span></li>
+              <li><span>LINE</span></li>
+              <li><a href="#">IG</a></li>
+              <li><a href="#">FB</a></li>
+            </ul>
+          </div>
+          <div class="footerRightContent">
+            <ul>
+              <li><span>japanx8@gmail.com</span></li>
+              <li><span>0935511314</span></li>
+              <li><span>japanx8</span></li>
+              <li><a href="#">HOMETRUST</a></li>
+              <li><a href="#">嘉信驗屋</a></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </footer>
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/phoneNav.js"></script>
+    <script src="js/form.js"></script>
+  </body>
+</html>
